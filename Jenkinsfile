@@ -145,8 +145,8 @@ pipeline {
             steps {
                 echo "Check out acme code"
                 git branch: "master",
-                        credentialsId: 'eldada-bb',
-                        url: 'https://git.jfrog.info/scm/~eldada/acme-ci-cd.git'
+                        credentialsId: 'git-creds',
+                        url: 'https://github.com/srinath3101/hello.git'
 
                 // Validate kubectl
                 sh "kubectl cluster-info"
